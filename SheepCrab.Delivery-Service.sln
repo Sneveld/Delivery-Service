@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SheepCrab.DeliveryService.D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{8480D2A7-BE52-4495-A4AA-B98BE6A3D9BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SheepCrab.DeliveryService.AutoMapper", "SheepCrab.DeliveryService.AutoMapper\SheepCrab.DeliveryService.AutoMapper.csproj", "{427067CD-C54E-4A0A-B236-AFB6F2CB8649}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheepCrab.DeliveryService.AutoMapper", "SheepCrab.DeliveryService.AutoMapper\SheepCrab.DeliveryService.AutoMapper.csproj", "{427067CD-C54E-4A0A-B236-AFB6F2CB8649}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
