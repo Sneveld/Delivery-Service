@@ -1,0 +1,35 @@
+﻿
+<!--<link rel="stylesheet" href="/css/navMenu.css">-->
+
+<div>
+    <div class="container">
+        <div class="row" id="menu">
+            <div class="container productsMenu">                
+                <ul class="main-navigation">
+                    <li *ngFor="let menu of topLvlCategories">
+                        <category-list (selectCategory) = "updateProducts($event)" [category]="menu" [categories]="siteMenu">
+
+                        </category-list>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row findProductDiv" id="find">
+            <div class="col-md-4 col-md-offset-8">
+                <input type="text" class="form-control inline" [(ngModel)]="fimdname">
+                <div class="inline">
+                    <a class="findIcon" (click)="find()">Поиск</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="targetPartial">
+                <!--ng-controller="AddProductController"-->
+                <div>
+                    <product *ngFor="let product of products" [product]="product"></product>                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

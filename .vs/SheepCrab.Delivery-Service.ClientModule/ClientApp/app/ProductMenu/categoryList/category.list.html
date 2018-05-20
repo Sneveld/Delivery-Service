@@ -1,0 +1,10 @@
+﻿<div>
+    <a (click)="updateProducts(category.id)">{{category.name}}</a>
+    <ul *ngIf="(childCategories).length > 0">
+        <li *ngFor="let menu of childCategories">
+            <category-list (selectCategory) = "updateProducts($event)" [category]="menu" [categories]="categories">
+
+            </category-list>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,109 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-SheepCrab.Delivery_Service.ClientModule-844F5E16-28E4-4BF7-A8FB-8B527715DF98</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app.component.ts" />
+    <None Remove="ClientApp\app.module.ts" />
+    <None Remove="ClientApp\app\app.module.ts" />
+    <None Remove="ClientApp\app\Carousel\carousel.component.ts" />
+    <None Remove="ClientApp\app\Carousel\slide.component.ts" />
+    <None Remove="ClientApp\app\CartInfo\cart-info.component.ts" />
+    <None Remove="ClientApp\app\Cart\CartList\cart.service.ts" />
+    <None Remove="ClientApp\app\Cart\CartList\CartProfile\cart-profile.component.ts" />
+    <None Remove="ClientApp\app\DTO\addproduct.dto.ts" />
+    <None Remove="ClientApp\app\DTO\category.dto.ts" />
+    <None Remove="ClientApp\app\DTO\Order\order-info.dto.ts" />
+    <None Remove="ClientApp\app\DTO\Order\order-item.dto.ts" />
+    <None Remove="ClientApp\app\DTO\Order\order.dto.ts" />
+    <None Remove="ClientApp\app\DTO\product.dto.ts" />
+    <None Remove="ClientApp\app\DTO\totals.dto.ts" />
+    <None Remove="ClientApp\app\Home\home.module.ts" />
+    <None Remove="ClientApp\app\Home\LandingPageImage\landing-page-image.dto.ts" />
+    <None Remove="ClientApp\app\Home\LandingPageImage\landing-page-image.service.ts" />
+    <None Remove="ClientApp\app\Home\LandingPageImage\landing-page-images.component.ts" />
+    <None Remove="ClientApp\app\ProductMenu\categoryList\category.list.component.ts" />
+    <None Remove="ClientApp\app\ProductMenu\product.menu.controller.ts" />
+    <None Remove="ClientApp\app\ProductMenu\product.menu.module.ts" />
+    <None Remove="ClientApp\app\ProductMenu\product.menu.service.ts" />
+    <None Remove="ClientApp\app\Product\product.component.ts" />
+    <None Remove="ClientApp\app\Services\total.service.ts" />
+    <None Remove="ClientApp\main.ts" />
+    <None Remove="ClientApp\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\app\CartInfo\cartInfo.css" />
+    <Content Include="ClientApp\app\Cart\cart.css" />
+    <Content Include="ClientApp\app\ProductMenu\productMenu.css" />
+    <Content Include="ClientApp\app\Product\product.css" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="CoreCompat.System.Drawing.v2" Version="5.2.0-preview1-r131" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\site.css" />
+    <None Include="wwwroot\css\site.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataContext\DataContext.csproj" />
+    <ProjectReference Include="..\SheepCrab.Delivery-Service.Entity\SheepCrab.DeliveryService.Entity.csproj" />
+    <ProjectReference Include="..\SheepCrab.DeliveryService.AutoMapper\SheepCrab.DeliveryService.AutoMapper.csproj" />
+    <ProjectReference Include="..\SheepCrab.DeliveryService.DataAccess\SheepCrab.DeliveryService.DataAccess.csproj" />
+    <ProjectReference Include="..\SheepCrab.DeliveryService.Model\SheepCrab.DeliveryService.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\app.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Carousel\carousel.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Carousel\slide.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\CartInfo\cart-info.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Cart\cart.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Cart\CartList\CartProfile\cart-profile.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\DTO\addproduct.dto.ts" />
+    <TypeScriptCompile Include="ClientApp\app\DTO\category.dto.ts" />
+    <TypeScriptCompile Include="ClientApp\app\DTO\Order\order-info.dto.ts" />
+    <TypeScriptCompile Include="ClientApp\app\DTO\Order\order-item.dto.ts" />
+    <TypeScriptCompile Include="ClientApp\app\DTO\Order\order.dto.ts" />
+    <TypeScriptCompile Include="ClientApp\app\DTO\product.dto.ts" />
+    <TypeScriptCompile Include="ClientApp\app\DTO\totals.dto.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Home\home.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Home\LandingPageImage\landing-page-image.dto.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Home\LandingPageImage\landing-page-image.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Home\LandingPageImage\landing-page-images.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\ProductMenu\categoryList\category.list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\ProductMenu\product.menu.controller.ts" />
+    <TypeScriptCompile Include="ClientApp\app\ProductMenu\product.menu.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\ProductMenu\product.menu.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Product\product.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Services\total.service.ts" />
+    <TypeScriptCompile Include="ClientApp\main.ts" />
+    <TypeScriptCompile Include="ClientApp\polyfills.ts" />
+  </ItemGroup>
+
+</Project>

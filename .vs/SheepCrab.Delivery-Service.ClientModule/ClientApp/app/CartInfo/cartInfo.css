@@ -1,0 +1,17 @@
+﻿.orderIcon {
+    background: url(../images/Icons/card.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-indent: -9999px;
+}
+
+.cart {
+    display: inline-block;
+    vertical-align: middle;
+    float: right !important;
+    margin-top: 10px;
+}

@@ -1,0 +1,126 @@
+﻿:root {
+    --mainColor: #E9A442;
+    --offDarkOneColor: #AF8851;
+    --offDarkTwoColor: #A66835;
+    --offLightOneColor: #FFD9BA;
+    --offLightTwoColor: #FFE3CC;
+}
+
+@font-face {
+    font-family: mainfont;
+    src: url(../fonts/10658.ttf);
+}
+
+@font-face {
+    font-family: mainfont2;
+    src: url(../fontsfonts/10681.ttf);
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+h4,h3, h2, a, p, tr,td, label {
+    color: black;
+    font-family: mainfont !important;
+    font-weight: bold;
+}
+
+.headerBar {
+    /*background-color: var(--offDarkTwoColor);*/
+    background-image: url(/images/Textures/wood8.jpg);
+    background-repeat: repeat-x;
+}
+.bodyBack {
+    /*background-color: var(--offLightTwoColor);*/
+    background-image: url(../images/Textures/wood-body.jpg);
+    background-repeat: repeat;
+}
+
+
+
+.headLinks  {
+    color: black;
+    font-size: large;
+}
+
+.phoneIcon {
+    background: url(../images/Icons/phone.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+}
+
+
+
+
+div.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.inline {
+    display: inline-block;
+}
+
+.findProductDiv {
+    margin-top: 10px;
+}
+
+.tableHeader {
+    background-color:darkgoldenrod;
+}
+
+.headerNavbar {
+    height: 120px;
+}
+
+.mainHeader {
+    height: 80px;
+}
+
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+.navbar {
+    -webkit-box-shadow: 0 10px 20px -5px #999;
+    -moz-box-shadow: 0 10px 20px -5px #999;
+    box-shadow: 0 10px 20px -5px #999;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 10px 20px -5px #999;
+    -moz-box-shadow: 0 10px 20px -5px #999;
+    box-shadow: 0 10px 20px -5px #999;
+}
+

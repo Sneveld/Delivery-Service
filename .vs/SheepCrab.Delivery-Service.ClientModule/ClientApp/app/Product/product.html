@@ -1,0 +1,24 @@
+﻿<div class="product">
+    <div style="font-size:20px;">
+        {{product.name}}
+        <br>
+    </div>
+    <div>
+        {{product.description}}
+        <br>
+        <br>
+    </div>
+    <div *ngIf="!product.image == null">
+        <div class="productImageBorder">
+            <img [src]="'data:image/JPEG;base64,'+ product.Image" height="170" width="170" />
+        </div>
+    </div>
+    <div style="font-size:20px;">
+        <br>
+        Цена: {{product.price}}
+    </div>
+    <div>
+        <br>
+        <a class="productLink" style="font-size:20px;" (click)="selectProduct(product.id,product.price)">Добавить</a>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+﻿
+<div class="cartPadding">
+    <div class="form-group">
+        <label class="control-label col-md-2">Номер телефона</label>
+        <div class="col-md-10">
+            <input [(ngModel)] ="order.orderInfo.number" (input)="numberChanged()" type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Имя</label>
+        <div class="col-md-10">
+            <input [(ngModel)] ="order.orderInfo.name" type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Город</label>
+        <div class="col-md-10">
+            <input [(ngModel)] ="order.orderInfo.city" type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Улица</label>
+        <div class="col-md-10">
+            <input [(ngModel)] ="order.orderInfo.Street" type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Номер дома</label>
+        <div class="col-md-10">
+            <input [(ngModel)] ="order.orderInfo.houseNumber" type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Квартира</label>
+        <div class="col-md-10">
+            <input [(ngModel)]="order.orderInfo.apartment" type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Этаж</label>
+        <div class="col-md-10">
+            <input [(ngModel)] ="order.orderInfo.floor" type="text" class="form-control" />
+        </div>
+    </div>
+</div>

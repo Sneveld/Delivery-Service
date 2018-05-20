@@ -1,0 +1,73 @@
+﻿<link rel="stylesheet" href="/lib//bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap-theme.css">
+<link rel="stylesheet" href="/css/site.css">
+
+<div ng-app="MyApp" class="container">
+    <div class="row">
+        <div class="navbar navbar-fixed-top headerBar headerNavbar">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <div>
+                        <div class="mainHeader container-fluid">
+                            <div class="row">
+                                <a class="vcenter">
+                                    <img src="/images/Icons/Logo.png" width="80" height="80" />
+                                </a>
+                                <div class="vcenter" style="margin-right: 50px; margin-left: 50px;">
+                                    <h2>
+                                        НАЗВАНИЕ
+                                    </h2>
+                                </div>
+
+                                <div class="vcenter" style="margin-right: 50px;">
+                                    <div class="phoneIcon vcenter">
+
+                                    </div>
+                                    <h2 class="vcenter">
+                                        888-777
+                                    </h2>
+                                </div>
+                                <cart-info></cart-info>
+
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="nav navbar-nav">
+                                <!--<li>@Html.ActionLink("Домашняя страница", "Index", "Home", null, new { @class = "headLinks" })</li>
+                                <li>@Html.ActionLink("Меню", "Index", "MainMenu", null, new { @class = "headLinks" })</li>
+                                <li>@Html.ActionLink("О программе", "About", "Home", null, new { @class = "headLinks" })</li>
+                                <li>@Html.ActionLink("Контакт", "Contact", "Home", null, new { @class = "headLinks" })</li>-->
+                                <li>
+                                    <a routerLink="">
+                                        Домашняя страница
+                                    </a>
+                                </li>
+                                <li>
+                                    <a routerLink="/menu">
+                                        Меню
+                                    </a>
+                                </li>
+                                <li>О программе</li>
+                                <li>Контакт</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 100px">
+        <div class="bodyBack">
+            <div class="container body-content">
+                <router-outlet></router-outlet>
+
+                <hr />
+                <footer>
+                    
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</div>

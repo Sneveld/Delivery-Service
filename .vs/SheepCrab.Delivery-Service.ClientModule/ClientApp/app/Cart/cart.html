@@ -1,0 +1,48 @@
+﻿
+
+<h2>Корзина</h2>
+<div ng-app="MyApp" ng-controller="orderItemController">
+    <div class="form-horizontal">
+        <hr />
+
+        <h3>Заказ</h3>
+        <div>
+            <cart-items-list [order]="order"></cart-items-list>
+        </div>
+
+        <hr />
+
+        <h3>Информация о заказе</h3>
+        <div class="cartPadding">
+            <div class="form-group">
+                <label class="control-label col-md-2">Назначенное время</label>
+                <div class="col-md-10">
+                    <input [(ngModel)]="order.deliveryTime" class="form-control"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Дополнительно</label>
+                <div class="col-md-10">
+                    <textarea [(ngModel)]="order.description" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <h3>Место дислокации</h3>
+        <div>
+            <cart-profile [order]="order"></cart-profile>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input (click)="saveOrder()" value="Оформить заказ" class="btn btn-default" />
+        </div>
+    </div>
+
+</div>

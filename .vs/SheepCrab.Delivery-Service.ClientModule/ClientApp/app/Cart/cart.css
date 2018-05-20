@@ -1,0 +1,17 @@
+﻿
+
+input, textarea {
+    max-width: none;
+}
+
+textarea {
+    width: 100%
+}
+
+.control-label {
+}
+
+.cartPadding {
+    margin-left: 40px;
+    margin-top: 40px;
+}

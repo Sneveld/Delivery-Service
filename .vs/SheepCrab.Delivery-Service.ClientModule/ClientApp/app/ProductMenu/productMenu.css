@@ -1,0 +1,114 @@
+﻿::ng-deep .menu {
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+
+/*Here I will write css for show horizantal nav menu*/
+
+::ng-deep div#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+::ng-deep div#menu ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background: transparent;
+}
+
+::ng-deep div#menu li ul {
+    display: none;
+}
+::ng-deep div#menu li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+::ng-deep div#menu ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: black !important;
+    font-size: large;
+}
+
+::ng-deep div#menu ul li a:hover {
+    background: yellow;
+}
+
+::ng-deep div#menu li:hover li {
+    float: none;
+}
+
+::ng-deep div#menu li:hover a {
+    background: bisque;
+}
+
+::ng-deep div#menu li:hover li a:hover {
+    background: yellow;
+}
+
+::ng-deep div#menu .main-navigation li ul li {
+    border-top: 0;
+}
+
+::ng-deep div#menu ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+::ng-deep div#menu ul:before,
+::ng-deep div#menu ul:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+::ng-deep div#menu ul:after {
+    clear: both;
+}
+
+
+
+
+
+.topPanel {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+::ng-deep .productsMenu {
+    /*background-color: var(--offDarkOneColor);*/
+    background-image: url(../images/Textures/wood7.jpeg);
+    background-repeat: repeat;
+    -webkit-box-shadow: 0 10px 20px -5px #999;
+    -moz-box-shadow: 0 10px 20px -5px #999;
+    box-shadow: 0 10px 20px -5px #999;
+}
+
+.findIcon {
+    background: url(../images/Icons/find.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+}
+
+
+/*div#find 
+{
+    vertical-align:central;
+    horiz-align: right;
+    float: right
+}*/
+
